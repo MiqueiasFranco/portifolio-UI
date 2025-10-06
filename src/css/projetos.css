@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&display=swap'); 
+
+
+.projetos{  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin-left: 63px;
+    margin-right: 63px;
+    align-items: flex-start;
+}
+
+
+.content{
+    display: flex;
+}
+.slider-container{
+    display: flex;
+    width: 1314px;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-box{
+    height: 305px;
+    width: 264px;
+    position: relative;
+    box-shadow: -6px 6px 17px rgba(0, 0, 0, 0.521);
+    opacity: .4;
+}
+.slider-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+    object-fit: cover;
+}
+
+.slider-box .text{
+    position: absolute;
+    display: none;
+}
+
+.ativo{
+    height: 405px;
+    width: 364px;
+    transition: .5s ease-in-out;
+    opacity: 1;
+}
+
+
+
+.ativo .text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    text-shadow: none;
+    font-family: 'julius sans one';
+    color: white;
+}
+.ativo span{
+    text-align: center;
+}
+
+.btn-anterior, .btn-proxima{
+    border: none;
+    background: none;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease-in-out}
+
+.btn-proxima:hover{
+    text-shadow: 0px 0px 10px white;
+}
+.btn-anterior:hover{
+    text-shadow: 0px 0px 10px white;
+}

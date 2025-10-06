@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(circle at top ,#313131  , #1F1F1F 50% );
+}
+
+
+.logo{
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sobre{  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 63px;
+    margin-right: 63px;
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    height: 551px;
+    width: 1314px;
+    gap: 230px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    height: 441px;
+    width: 710px;
+    gap: 84px;
+}
+
+.text h1{
+    font-family: 'kdam thmor pro';
+    font-size: 40px;
+    color: white;
+    position: relative;
+    width: 190px;
+
+}
+.text p{
+    font-size: 24px;
+}
+
+.img{
+    height: 441px;
+    width: 368px;
+}
+
+.img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: -8px 10px 14px rgba(0, 0, 0, 0.288);
+}
+
+.redesocial-sobre{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width:  160px;
+    color: #ffffffa1;
+    transition: .5s ease-in-out;
+}
+.redesocial-sobre svg:hover{
+   scale: 1.2;
+   transition: .5s ease-in-out;
+   cursor: pointer;
+
+}
+
+
+
+.text h1::after{
+    
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #8c7851;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+
+}

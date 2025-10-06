@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(circle at top ,#313131  , #1F1F1F 60% );
+}
+
+.home{  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin-left: 63px;
+    margin-right: 63px;
+    align-items: flex-start;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 46px;
+    width: 1314px;
+    margin-top: 20px;
+    font-family: 'julius sans one';
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+nav .logo{
+    font-family: 'kenia';
+    font-size: 36px;
+    color: #8c7851;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5) ;
+}
+
+.content p{
+    font-family: 'julius sans one';
+    font-size: 24px;
+    color: #FFFFFF;
+    justify-content: flex-start;
+    height: 100%;
+    display: flex;
+}
+.content  .span-nome{
+    display: flex;
+    flex-direction: column;
+    font-family:'marcellus sc' ;
+    font-size: 128px;
+    color: #FFFFFF;
+    height:100% ;
+}
+
+.botoes-home{ 
+    display: flex;
+    gap: 66px;
+    list-style: none;
+    text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5) ;
+    cursor: pointer;
+}
+
+.botoes-home a {
+    position: relative;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.botoes-home a::after{
+    
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: #8c7851;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+
+}
+
+.botoes-home a:hover::after{
+    width: 100%;
+}
+
+.title2 p{    
+    align-items: end;  
+}
+
+.span{
+    display: flex;
+    flex-direction: column;
+}
+
+.redesocial{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 160px;
+    color: #ffffffa1;
+    transition: .5s ease-in-out;
+}
+.redesocial svg:hover{
+   scale: 1.2;
+   transition: .5s ease-in-out;
+   cursor: pointer;
+
+}
+
+.span2{
+    margin-top: -60px;
+    margin-left: 180px;
+    color: #8c7851;
+}
+
+/* /* #4b4c50  , #26272c 60%  */
