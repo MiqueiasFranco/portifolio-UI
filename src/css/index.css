@@ -55,7 +55,7 @@ nav .logo{
     text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5) ;
 }
 
-.content p{
+.title1 p,.title2 p{
     font-family: 'julius sans one';
     font-size: 24px;
     color: #FFFFFF;
@@ -133,5 +133,7 @@ nav .logo{
     margin-left: 180px;
     color: #8c7851;
 }
+
+
 
 /* /* #4b4c50  , #26272c 60%  */
