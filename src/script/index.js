@@ -14,7 +14,7 @@ menu.addEventListener('click', ()=>{
 
 btnClose.addEventListener('click', ()=>{
     onOFF = !onOFF
-    sidebar.style.right = '-2563px'
+    sidebar.style.right = '-563px'
     sidebar.style.transition = '.5s ease-in-out'
 
 })
