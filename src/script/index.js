@@ -1,43 +1,20 @@
-let imgslide= document.querySelectorAll('.slider-box')
-let btnAnterior= document.querySelector('#btn-anterior')
-let btnProximo= document.querySelector('#btn-proximo')
+const menu = document.querySelector('.menu')
+const btnClose = document.querySelector('.close')
+const sidebar = document.querySelector('.sidebar')
+let onOFF = false
 
-
-let contadorImg =  imgslide.length
-let imgAtiva = 0
-
-btnProximo.addEventListener('click',()=>{
-
-    
-    if(imgAtiva >= contadorImg){
-        imgAtiva = 0
-
+menu.addEventListener('click', ()=>{
+    onOFF = !onOFF
+    if(onOFF){
+        sidebar.style.display = 'flex'
+        sidebar.style.right = '0'
+        sidebar.style.transition = '.5s ease-in-out'
     }
-    for(let card of imgslide){
-        if(card.classList.contains('ativo')){
-            card.classList.remove('ativo')
-        }
-    }
-    imgslide[imgAtiva].classList.add('ativo')
-    imgAtiva ++
 })
 
-btnAnterior.addEventListener('click',()=>{
+btnClose.addEventListener('click', ()=>{
+    onOFF = !onOFF
+    sidebar.style.right = '-2563px'
+    sidebar.style.transition = '.5s ease-in-out'
 
-    
-    imgAtiva --
-    if(imgAtiva < 0){
-        imgAtiva = contadorImg -1
-
-    }
-    for(let card of imgslide){
-        if(card.classList.contains('ativo')){
-            card.classList.remove('ativo')
-        }
-    }
-    imgslide[imgAtiva].classList.add('ativo')
 })
-
-
-
-
