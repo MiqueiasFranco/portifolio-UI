@@ -6,10 +6,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
-    margin-left: 63px;
-    margin-right: 63px;
     align-items: flex-start;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 20px;
+    position: relative;
 }
 
 
@@ -18,9 +20,10 @@
 }
 .slider-container{
     display: flex;
-    width: 1314px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .slider-box{
     height: 305px;
@@ -39,6 +42,8 @@
 
 .slider-box .text{
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: none;
 }
 
@@ -70,7 +75,7 @@
     border: none;
     background: none;
     font-size: 40px;
-    color: white;
+    color: #8c7851;
     cursor: pointer;
     transition: .3s ease-in-out}
 
@@ -79,4 +84,123 @@
 }
 .btn-anterior:hover{
     text-shadow: 0px 0px 10px white;
+}
+
+.menu{
+    display: none;
+    
+}
+
+.sidebar{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -563px;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 100px;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    background: #1F1F1F;
+    z-index: 9999;
+}
+
+.close{
+    color:#8c7851;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 20px;
+    font-family: 'julius sans one';
+}
+
+.sidebar .botoes a{
+    text-decoration: none;
+    color: #FFFFFF;
+    position: relative;
+
+}
+
+.sidebar .botoes a::after{
+    
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: #8c7851;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+
+}
+
+.sidebar .botoes a:hover::after{
+    width: 100%;
+}    
+
+.redesocial{
+    display: flex;
+}
+
+@media (max-width:470px) {
+
+    .content{
+        display: flex;
+        height: 60vh;
+        width: 100%;
+        gap: 200px;
+    }
+    .slider-container{
+        display: flex;
+        padding-right: 0;
+        height: 80%;
+        
+    }
+    
+    .btn-anterior, .btn-proxima{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+        color: #1F1F1F;
+        filter:drop-shadow(0 0 2px white);
+    }
+    .btn-anterior{
+        left: 20px;
+    }
+    .btn-proxima{
+        right: 20px;
+    }
+    .ativo{
+        height: 50%;
+        width: 90%;
+        transition: .5s ease-in-out;
+        opacity: 1;
+        position: absolute;
+        z-index: 98;
+    }
+    .slider-box{
+        height: 100%;
+        width: 100%;
+        
+    }
+    .botoes-home{
+            display: none;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF
+    }
+
+   .ativo .text{
+        width: 60%; 
+        font-size: .7rem;       
+    }
+    
 }
