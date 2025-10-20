@@ -50,12 +50,14 @@ nav .logo{
 
 
 
-.content{
+.content-home{
     display: flex;
     justify-content: center;
     width: 100%;
     text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5) ;
 }
+
+
 
 .title1 p,.title2 p{
     font-family: 'julius sans one';
@@ -65,7 +67,7 @@ nav .logo{
     height: 100%;
     display: flex;
 }
-.content  .span-nome{
+.content-home  .span-nome{
     display: flex;
     flex-direction: column;
     font-family:'marcellus sc' ;
@@ -208,15 +210,15 @@ nav .logo{
     .logo p{
         margin-top: -6%;
     }
-    .content{
+    .content-home{
         height: 20%;
         justify-content: center;
     }
-    .content .span-nome{
+    .content-home .span-nome{
         height: auto;
         margin: auto ;
     }
-    .content .span-nome span{
+    .content-home .span-nome span{
         font-size: 3rem;
         padding: 0;
     }
@@ -249,7 +251,7 @@ nav .logo{
 }
 
 @media (max-width:470px) {
-    .content{
+    .content-home{
         flex-direction: column;
         text-align: center;
     }

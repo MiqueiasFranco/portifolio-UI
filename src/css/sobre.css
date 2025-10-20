@@ -29,22 +29,22 @@ body{
     overflow: hidden;
     padding: 0 20px;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     position: relative;
 }
 
 .content{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    height: 60%;
+    align-items: center;
+    height: 100vh;
     width: 100%;
-    gap: 230px;
 }
 
 .text{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
     width: 710px;
     gap: 84px;
@@ -126,75 +126,18 @@ body{
     width: 50%;
     background: #1F1F1F;
 }
-@media (max-width:760px) {
-
-    .home{
-        height: 100vh;
-        width: 100vw;
-    }
-    
-    nav{
-        text-align: center;
-    }
-    .logo {
-        display: flex;
-        height:100%;
-    }
-    .logo p{
-        margin-top: -6%;
-    }
-    .content{
-        height: 20%;
-        justify-content: center;
-    }
-    .content .span-nome{
-        height: auto;
-        margin: auto ;
-    }
-    .content .span-nome span{
-        font-size: 3rem;
-        padding: 0;
-    }
-    .span1{
-        margin-left: -40px;
-        margin-bottom: -30px;
-        text-align: end;
-    }
-    .span2{
-        margin: 0;
-        margin-right: -40px;
-        text-align: end;
-    }
-    .title1 p,.title2 p{
-        font-family: 'julius sans one';
-        font-size: 20px;
-        color: #FFFFFF;
-        height: 100%;
-        display: flex;
-    }
-    .botoes-home{
-        display: none;
-    }
-    .menu{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #FFFFFF
-    }
-}
 
 
 
 @media (max-width:470px) {
-
-    .content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100vw;
+    .sobre{
         height: 100vh;
-        gap: 30px;
-        margin-bottom: 80px;
+
+    }
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        gap: 5%;
     }
     .img{
         height: 200px;
@@ -202,6 +145,8 @@ body{
     }
     .text{
         width: 100%;
+        height: 50%;
+        justify-content: center;
         text-align: left;
         gap: 20px;
         order: 2;
@@ -222,7 +167,7 @@ body{
 
     }
     .paragrafo{
-        font-size: .7rem;
+        font-size: .9rem;
         width: 100%;
     }
 
